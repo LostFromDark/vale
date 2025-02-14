@@ -31,7 +31,7 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Cute teddy bear with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <img id="imageDisplay" src="https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif" alt="Cute teddy bear with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
@@ -59,13 +59,13 @@
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif", // Cute GIF
-      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",  // Sad GIF
-      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",  // Cute GIF
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif", // Jealous GIF
-      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",  // Sad GIF
-      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",  // Cute GIF
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"  // Jealous GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif", // Cute GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif", // Cute GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif", // Cute GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif", // Cute GIF
+      "https://media1.tenor.com/m/rlvsujbkhtsAAAAd/milk-and-mocha-bear-couple.gif",  // Sad GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif",  // Cute GIF
+      "https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif"  // Jealous GIF
     ];
 
     noButton.addEventListener('click', function() {
@@ -87,7 +87,7 @@
 
     yesButton.addEventListener('click', () => {
         console.log('Yes button clicked'); // Debugging
-        imageDisplay.src = 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif'; // Different gif when 'Yes' is clicked
+        imageDisplay.src = 'https://media1.tenor.com/m/SYUZJTPVVlYAAAAd/bear-love.gif'; // Different gif when 'Yes' is clicked
         valentineQuestion.textContent = "Yayyy!! :3";
         responseButtons.style.display = 'none';
         confetti();
