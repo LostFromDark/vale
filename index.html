@@ -31,15 +31,15 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="./images/teddy_bear1.gif" alt="Cute teddy bear with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <img id="imageDisplay" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Cute teddy bear with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
-          class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[80px] h-12">
+          class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[100px]">
           Yes
         </button>
         <button id="noButton"
-          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium transition disabled:pointer-events-none disabled:opacity-50 hover:bg-red-700 h-12 min-w-[70px]">
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium transition disabled:pointer-events-none disabled:opacity-50 hover:bg-red-700 h-12 min-w-[100px]">
           No
         </button>
       </div>
@@ -59,13 +59,13 @@
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
-      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
-      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
-      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
-      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif", // Cute GIF
+      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",  // Sad GIF
+      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",  // Cute GIF
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif", // Jealous GIF
+      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",  // Sad GIF
+      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",  // Cute GIF
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"  // Jealous GIF
     ];
 
     noButton.addEventListener('click', function() {
@@ -92,6 +92,6 @@
         responseButtons.style.display = 'none';
         confetti();
     });
-</script>
+  </script>
 </body>
 </html>
