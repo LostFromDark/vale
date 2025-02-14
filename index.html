@@ -69,20 +69,20 @@
     ];
   
     noButton.addEventListener('click', function() {
-      if (noClickCount < 5) {
-        noClickCount++;
-        imageDisplay.src = imagePaths[noClickCount];
-        buttonHeight += 35; // Increase height by 5px on each click
-        buttonWidth += 35;
-        fontSize += 25; // Increase font size by 1px on each click
-        yesButton.style.height = `${buttonHeight}px`; // Update button height
-        yesButton.style.width = `${buttonWidth}px`;
-        yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "pelez", "Even after the flower?:c , "You're breaking my heart", "xii thekai xa..."][noClickCount];
-        }
-      }
-    });
+  if (noClickCount < 5) {
+    noClickCount++;
+    imageDisplay.src = imagePaths[noClickCount];
+    buttonHeight += 35; // Increase height by 5px on each click
+    buttonWidth += 35;
+    fontSize += 25; // Increase font size by 1px on each click
+    yesButton.style.height = `${buttonHeight}px`; // Update button height
+    yesButton.style.width = `${buttonWidth}px`;
+    yesButton.style.fontSize = `${fontSize}px`; // Update font size
+    if (noClickCount < 6) {
+      noButton.textContent = ["No", "Are you sure?", "pelez", "Even after the flower?:c", "You're breaking my heart", "xii thekai xa..."][noClickCount];
+    }
+  }
+});
   
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './images/image7.gif'; // Change to image7.gif
