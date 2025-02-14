@@ -68,28 +68,30 @@
       "./images/image7.gif"
     ];
   
-    noButton.addEventListener('click', function() {
+ noButton.addEventListener('click', function() {
+  console.log('No button clicked'); // Add this line for debugging
   if (noClickCount < 5) {
     noClickCount++;
     imageDisplay.src = imagePaths[noClickCount];
-    buttonHeight += 35; // Increase height by 5px on each click
+    buttonHeight += 35;
     buttonWidth += 35;
-    fontSize += 25; // Increase font size by 1px on each click
-    yesButton.style.height = `${buttonHeight}px`; // Update button height
+    fontSize += 25;
+    yesButton.style.height = `${buttonHeight}px`;
     yesButton.style.width = `${buttonWidth}px`;
-    yesButton.style.fontSize = `${fontSize}px`; // Update font size
+    yesButton.style.fontSize = `${fontSize}px`;
     if (noClickCount < 6) {
       noButton.textContent = ["No", "Are you sure?", "pelez", "Even after the flower?:c", "You're breaking my heart", "xii thekai xa..."][noClickCount];
     }
   }
 });
-  
-    yesButton.addEventListener('click', () => {
-      imageDisplay.src = './images/image7.gif'; // Change to image7.gif
-      valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
-      responseButtons.style.display = 'none'; // Hide both buttons
-      confetti(); // Trigger confetti animation
-    });
+
+yesButton.addEventListener('click', () => {
+  console.log('Yes button clicked'); // Add this line for debugging
+  imageDisplay.src = './images/image7.gif';
+  valentineQuestion.textContent = "Yayyy!! :3";
+  responseButtons.style.display = 'none';
+  confetti();
+});
   </script>  
 </body>
 </html>
