@@ -59,39 +59,39 @@
     let buttonWidth = 80;
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
-      "./images/teddy_bear1.gif",
-      "./images/teddy_bear2.gif",
-      "./images/teddy_bear3.gif",
-      "./images/teddy_bear4.gif",
-      "./images/teddy_bear5.gif",
-      "./images/teddy_bear6.gif",
-      "./images/teddy_bear7.gif"
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
+      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
+      "https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif",
+      "https://media.giphy.com/media/l0HUqsz2jdQYElRm0/giphy.gif",
+      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
     ];
 
     noButton.addEventListener('click', function() {
-      console.log('No button clicked'); // Debugging
-      if (noClickCount < 7) {
-        noClickCount++;
-        imageDisplay.src = imagePaths[noClickCount];
-        buttonHeight += 50; // Increase height significantly on each click
-        buttonWidth += 50;
-        fontSize += 25;
-        yesButton.style.height = `${buttonHeight}px`;
-        yesButton.style.width = `${buttonWidth}px`;
-        yesButton.style.fontSize = `${fontSize}px`;
-        if (noClickCount < 8) {
-          noButton.textContent = ["No", "Are you sure?", "pelez", "Reallyyy?!!", "Arkai manxe vayera hola:c", "Even after the flower?:c", "You're breaking my heart", "xii thekai xa..."][noClickCount];
+        console.log('No button clicked'); // Debugging
+        if (noClickCount < 7) {
+            noClickCount++;
+            imageDisplay.src = imagePaths[noClickCount];
+            buttonHeight += 50; // Increase height significantly on each click
+            buttonWidth += 50;
+            fontSize += 25;
+            yesButton.style.height = `${buttonHeight}px`;
+            yesButton.style.width = `${buttonWidth}px`;
+            yesButton.style.fontSize = `${fontSize}px`;
+            if (noClickCount < 8) {
+                noButton.textContent = ["No", "Are you sure?", "pelez", "Reallyyy?!!", "Arkai manxe vayera hola:c", "Even after the flower?:c", "You're breaking my heart", "xii thekai xa..."][noClickCount];
+            }
         }
-      }
     });
 
     yesButton.addEventListener('click', () => {
-      console.log('Yes button clicked'); // Debugging
-      imageDisplay.src = './images/teddy_bear8.gif'; // Different gif when 'Yes' is clicked
-      valentineQuestion.textContent = "Yayyy!! :3";
-      responseButtons.style.display = 'none';
-      confetti();
+        console.log('Yes button clicked'); // Debugging
+        imageDisplay.src = 'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif'; // Different gif when 'Yes' is clicked
+        valentineQuestion.textContent = "Yayyy!! :3";
+        responseButtons.style.display = 'none';
+        confetti();
     });
-  </script>
+</script>
 </body>
 </html>
